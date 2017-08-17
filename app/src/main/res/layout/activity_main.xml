@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.saravanan_selvaraju.flames.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="19dp">
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/name"
+                  android:padding="15dp"
+                  android:hint="Enter Your Name"
+                  android:textStyle="bold"
+                  android:background="#59FFffFF"
+                  android:layout_marginTop="25dp"
+                  android:clickable="true"
+                  android:gravity="center"
+                  tools:fontFamily="casual"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/crush"
+                  android:padding="15dp"
+                  android:background="#59FFffFF"
+                  android:hint="Enter Your Crush Name"
+                  android:textStyle="bold"
+                  android:gravity="center"
+                  android:textSize="20dp"
+                  android:layout_marginTop="15dp"
+                  android:clickable="true"
+                  tools:fontFamily="casual"
+                  android:typeface="normal" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:weightSum="2">
+                 <Button
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:textStyle="bold"
+                     android:id="@+id/show"
+                     android:padding="20dp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_gravity="center"
+                     android:text="Show"
+                     android:background="@color/colorPrimary"
+                     android:textColor="@android:color/white"
+                     android:layout_marginTop="20dp"
+                     android:clickable="true"
+                     android:layout_marginRight="2dp"
+                     tools:fontFamily="casual"
+                     android:layout_weight="1"/>
+                 <Button
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:layout_marginBottom="5dp"
+                     android:textStyle="bold"
+                     android:id="@+id/clear"
+                     android:padding="20dp"
+                     android:layout_marginLeft="2dp"
+                     android:layout_gravity="center"
+                     android:text="Clear"
+                     android:background="@color/colorPrimary"
+                     android:textColor="@android:color/white"
+                     android:layout_marginTop="20dp"
+                     android:clickable="true"
+                     tools:fontFamily="casual"
+                     android:onClick="clear"/>
+             </LinearLayout>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="45dp"
+                  android:textColor="@android:color/black"
+                  android:id="@+id/result"
+                  android:gravity="center"
+                  android:textSize="35dp"
+                  android:padding="30dp"
+                  android:textStyle="bold|italic"
+                  android:textAllCaps="true"
+                  tools:fontFamily="casual"
+                  android:background="#59FFffFF" />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom"
+                  android:text="©saravanan-selvaraju"
+                  android:padding="4dp"
+                  android:layout_marginTop="30dp"
+                  android:gravity="end"
+                  android:textColor="@android:color/white"
+                  android:onClick="about"/>
+          </LinearLayout>
+    </ScrollView>
+</LinearLayout>
